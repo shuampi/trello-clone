@@ -1,16 +1,11 @@
-import React from 'react';
-import { AppContainer, ColumnContainer, ColumnTitle, CardContainer } from './styles';
+import {Column} from './Column';
+import { AppContainer } from './styles';
 
 
 export function App() {
   return (
    <AppContainer>
-      <ColumnContainer>
-        <ColumnTitle>TODO:</ColumnTitle>
-        <CardContainer>FirstItem</CardContainer>
-        <CardContainer>SecondItem</CardContainer>
-        <CardContainer>ThirdItem</CardContainer>
-      </ColumnContainer>
+      <Column text="TODO:"/>
    </AppContainer>
   );
 }

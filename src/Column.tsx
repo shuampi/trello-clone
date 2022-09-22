@@ -1,6 +1,7 @@
 
 import { ColumnContainer, ColumnTitle} from "./styles";
 import {Card} from './Card'
+import { AddNewItem } from "./AddNewItem";
 type ColumnProps = {
     text: string
 }
@@ -12,6 +13,7 @@ return (
         <Card text="Generate App Scaffold"/>
         <Card text="Learn TypeScript"/>
         <Card text="Begin to use static typing"/>
+        <AddNewItem toggleButtonText="+ Add another card" onAdd={console.log} dark />
     </ColumnContainer>
 )
 }
